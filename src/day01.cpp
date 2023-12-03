@@ -1,13 +1,4 @@
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <sstream>
-#include <map>
-#include <vector>
-
-using std::cout;
-using std::string;
-using std::vector;
+#include "common.h"
 
 const string exampleInput1 = R"(1abc2
 pqr3stu8vwx
