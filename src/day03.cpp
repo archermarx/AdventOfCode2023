@@ -81,6 +81,10 @@ int partNumberSum(vector<string> lines, bool verbose) {
                     acc += c;
                 }
                 foundSymbol = foundSymbol || checkNeighborhood(lines, i, j);
+
+                if ((i == N - 1) && foundSymbol) {
+                    numbers.push_back(stoi(acc));
+                } 
             } else {
                 if (insideNumber) {
                     insideNumber = false;
