@@ -6,3 +6,4 @@ project(
 
 executable('day01', 'src/day01.cpp')
 executable('day02', 'src/day02.cpp')
+executable('day03', 'src/day03.cpp')

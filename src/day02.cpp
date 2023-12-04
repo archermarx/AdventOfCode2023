@@ -68,7 +68,7 @@ int gamePower(string game) {
 }
 
 template <typename T>
-void solution_01_1(T& stream, bool verbose) {
+void solution_02_1(T& stream, bool verbose) {
     std::string line;
     int sum = 0;
     int ind = 1;
@@ -88,7 +88,7 @@ void solution_01_1(T& stream, bool verbose) {
 }
 
 template <typename T>
-void solution_01_2(T& stream, bool verbose) {
+void solution_02_2(T& stream, bool verbose) {
     std::string line;
     int sum = 0;
     while (std::getline(stream, line)) {
@@ -111,24 +111,21 @@ int main() {
 
     cout << "Part 1 example (expected " << exampleAnswer1 << ")\n";
     std::istringstream example01(exampleInput1);
-    solution_01_1(example01, true);    
+    solution_02_1(example01, true);    
     
     cout << "\nPart 1 solution" << "\n";
     std::ifstream inputLines(inputPath);
-    solution_01_1(inputLines, false);
+    solution_02_1(inputLines, false);
 
     cout << "====================================" << "\n";
 
     cout << "Part 2 example (expected " << exampleAnswer2 << ")\n";
     std::istringstream example02(exampleInput1);
-    solution_01_2(example02, true);    
+    solution_02_2(example02, true);    
     
     cout << "\nPart 2 solution" << "\n";
     std::ifstream inputLines2(inputPath);
-    solution_01_2(inputLines2, false);
-
-    //auto str = "Game 52: 14 blue, 3 red; 11 green, 6 red, 9 blue; 6 blue, 10 red; 1 red, 1 green, 4 blue; 9 blue, 6 green; 3 red, 2 blue, 8 green";
-    //cout << str << ": " << validGame(str) << "\n";
+    solution_02_2(inputLines2, false);
 
     return 0;
 }
